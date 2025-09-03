@@ -1,20 +1,33 @@
-﻿<!-- feat: crear archivo index.html con estructura base -->
-<!-- feat: agregar sección header con título del perfil -->
-<!-- feat: añadir sección de información del estudiante -->
-<!-- feat: incluir sección de series favoritas con contenedor grid -->
-<!-- feat: agregar primeras imágenes de series (Friends, GOT, Breaking Bad, Stranger Things) -->
-<!-- style: aplicar estilos generales al body y fuentes -->
-<!-- style: diseñar el header con fondo azul y texto blanco -->
-<!-- style: dar estilo a la sección info con tarjeta blanca y bordes redondeados -->
-<!-- style: mejorar grid de series con gap y responsive design -->
-<!-- style: ajustar imágenes de series con borde redondeado y altura fija -->
-<!-- refactor: organizar etiquetas HTML con indentación correcta -->
-<!-- chore: crear carpeta img/ para organizar imágenes locales -->
-<!-- feat: agregar más series favoritas al listado (ej. The Office, Dark) -->
-<!-- feat: añadir más imágenes en la carpeta img/ y enlazarlas -->
-<!-- style: mejorar legibilidad de los títulos h2 -->
-<!-- feat: añadir footer con créditos y año del proyecto -->
-<!-- fix: corregir rutas de imágenes que no cargaban -->
-<!-- refactor: mejorar nombres de clases CSS para mayor claridad -->
-<!-- chore: agregar archivo README.md con descripción del proyecto -->
-<!-- docs: actualizar README con instrucciones de deploy en Netlify -->
+﻿<!DOCTYPE html>
+<html lang='es'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Mi Perfil</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; }
+    header { background: #1e3a8a; color: white; padding: 30px; text-align: center; }
+    .info, .series { margin: 20px auto; max-width: 900px; background: white; padding: 20px; border-radius: 12px; }
+    .series-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+    .serie { text-align: center; background: #fafafa; border-radius: 10px; padding: 10px; }
+    .serie img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <header><h1>Perfil de Andres Martinez</h1></header>
+  <section class='info'>
+    <h2>Información del Estudiante</h2>
+    <p><strong>Nombre:</strong> Andres Martinez</p>
+    <p><strong>Semestre:</strong> 4</p>
+    <p><strong>Hobbies:</strong> jugar futbol, ver tv</p>
+  </section>
+  <section class='series'>
+    <h2>Mis Series Favoritas</h2>
+    <div class='series-container'>
+      <div class='serie'><img src="img/licensed-image (1).jpg"><p>Friends</p></div>
+      <div class='serie'><img src="img/licensed-image.jpg"><p>Game of Thrones</p></div>
+      <div class='serie'><img src="img/licensed-image (2).jpg"><p>Breaking Bad</p></div>
+      <div class='serie'><img src="img/licensed-image (3).jpg"><p>Stranger Things</p></div>
+    </div>
+  </section>
+</body>
+</html>
